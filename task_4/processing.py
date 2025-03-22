@@ -9,7 +9,7 @@ def parse_input(user_input):
 
 @input_error
 def add_contact(args, contacts):
-    # if len(args) != 2:
+    # if len(args) != 2: #! така перевірка була
     #     return "Error: Please provide a name and phone number along with command (e.g. add Jane 8099640..)."
     name, phone = args
     if name in contacts:
@@ -21,7 +21,7 @@ def add_contact(args, contacts):
 
 @input_error
 def change_contact(args, contacts):
-    # if len(args) != 2:
+    # if len(args) != 2: #! така перевірка була
     #     return "Error: Please provide a name and new phone number along with command (e.g. change Jane 8099640..)."
     name, phone = args
     if name in contacts:
@@ -33,7 +33,7 @@ def change_contact(args, contacts):
 
 @input_error
 def show_phone(args, contacts):
-    # if len(args) != 1:
+    # if len(args) != 1:  #! така перевірка була
     #     return "Error: Please provide the contact name."
     name = args[0]
     return contacts.get(name, f"Error: Contact '{name}' not found.")

@@ -34,22 +34,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
-#! Different approach I've also tried
-
-# elif command == "add":
-#     add_input = input("Enter name and phone number (e.g., Nick 0954021386): ")
-#     _, args = parse_input(f"add {add_input}")
-#     if len(args) != 2:                
-#         print("Error: Please provide command: Name Phone-number)")
-#     else:
-#         print(add_contact(args, contacts))
-
-# elif command == "change":
-#     change_input = input("Enter name and new phone number to update to  (e.g., Nick 0954021386): ")
-#     _, args = parse_input(f"add {change_input}")
-#     if len(args) != 2:                
-#         print("Error: Please provide command: Name to change Phone-number")
-#     else:
-#         print(change_contact(args, contacts))
-
